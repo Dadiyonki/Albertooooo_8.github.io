@@ -1,0 +1,882 @@
+body {
+    background-color: black;
+    color: white;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 0.5cm;
+    background-image: url(nuevoFondoOscuro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 15px;
+    align-items: center;
+
+}
+
+ul nav {
+    list-style: none;
+}
+
+h1 a {
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+header h1 a {
+    padding-left: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+nav :hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.20);
+}
+
+nav {
+    font-size: 25px;
+    flex: 1;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+nav a {
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+
+footer {
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.highlight {
+    color: #e44d26;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.galleryElement {
+    margin: 10px;
+    flex: 1 0 calc(50% - 20px);
+}
+
+.galleryElement img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.galleryElement img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.article {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    justify-content: flex-end;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article>div {
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-flex {
+    display: flex;
+    width: 100%;
+}
+
+.contenedor-flexElement {
+    margin: 10px;
+    text-align: center;
+    flex: 1 0 calc(50% - 20px);
+}
+
+.contenedor-flex img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.img {
+    flex: 1;
+}
+
+.rounded-image-container {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.imgFloatRight {
+    float: right;
+    padding: 10px;
+}
+
+.imgFloatLeft {
+    float: left;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.containerBlog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.blog-post {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.homePage {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 180px;
+}
+
+.imgHomePage {
+    max-width: 200;
+    max-height: 500;
+}
+
+.headPage {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.headPage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.headPage a :hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+.borde {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.galleryElement {
+    margin: 10px;
+    flex: 1 0 calc(50% - 20px);
+}
+
+.galleryElement img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pageTittle {
+    text-align: center;
+    font-size: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    background-color: dimgrey;
+}
+
+th {
+    background-color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    border-radius: 15px;
+}
+
+label,
+input,
+textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.containerForm .item {
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    resize: vertical;
+}
+
+.checkbox-container {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    transition: border-color 0.3s ease;
+}
+
+.textaco {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.textacoDrugs {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    header {
+        display: flex;
+        border: 2px solid white;
+        border-radius: 15px;
+        align-items: left;
+    }
+
+    ul nav {
+        list-style: none;
+    }
+
+    h1 a {
+        text-decoration: none;
+        transition: font-size 0.3s ease;
+    }
+
+    header h1 a {
+        flex: 1;
+        padding-left: 5px;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav :hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.20);
+    }
+
+    nav {
+        font-size: 15px;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        margin-right: 0px;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .homePage {
+        justify-content: center;
+        align-items: center;
+        padding: 180px;
+    }
+
+    .imgHomePage {
+        padding-right: 130px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .imgFloatRight {
+        max-height: 150px;
+        max-width: 200px;
+        float: right;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .column {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .contenedor-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor-flexElement {
+        margin: 10px;
+        text-align: center;
+        flex: 1 0 calc(50% - 20px);
+    }
+
+    .containerForm {
+        font-size: 15px;
+        justify-content: center;
+        padding-left: 0px;
+        max-width: 1200px;
+        margin: 0px;
+    }
+    
+    .containerForm .item {
+        margin-right: 0px;
+    } 
+
+    .checkbox-container {
+        display: none;
+    }
+
+    #drugForm {
+        display: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    td {
+        background-color: dimgrey;
+    }
+    
+    th {
+        background-color: black;
+    }
+
+    td:nth-child(6), th:nth-child(6) {
+        display: none;
+    }
+
+    td:nth-child(3), th:nth-child(3) {
+        display: none;
+    }
+
+    td:nth-child(2), th:nth-child(2) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+    header {
+        display: flex;
+        border: 2px solid white;
+        border-radius: 15px;
+        align-items: left;
+    }
+
+    ul nav {
+        list-style: none;
+    }
+
+    h1 a {
+        text-decoration: none;
+        transition: font-size 0.3s ease;
+    }
+
+    header h1 a {
+        padding-left: 25px;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav :hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.20);
+    }
+
+    nav {
+        font-size: 15px;
+        flex: 1;
+        display: flex;
+        height: 100%;
+        width: 75%;
+        margin: 0;
+        margin-right: 20px;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        flex: 1;
+        text-decoration: none;
+        color: white;
+    }
+
+    .homePage {
+        justify-content: center;
+        align-items: center;
+        padding: 180px;
+    }
+
+    .imgHomePage {
+        padding-right: 75px;
+        max-width: 250px;
+        max-height: 200px;
+    }
+
+    .imgFloatRight {
+        max-height: 200px;
+        max-width: 250px;
+        float: right;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .column {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .contenedor-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor-flexElement {
+        margin: 10px;
+        text-align: center;
+        flex: 1 0 calc(50% - 20px);
+    }
+
+    .containerForm {
+        font-size: 15px;
+        justify-content: center;
+        padding-left: 0px;
+        max-width: 1200px;
+        margin: 0px;
+    }
+    
+    .containerForm .item {
+        margin-right: 0px;
+    } 
+
+    .checkbox-container {
+        display: none;
+    }
+
+    #drugForm {
+        display: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    td {
+        background-color: dimgrey;
+    }
+    
+    th {
+        background-color: black;
+    }
+
+    td:nth-child(6), th:nth-child(6) {
+        display: none;
+    }
+
+    td:nth-child(3), th:nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    header {
+        display: flex;
+        border: 2px solid white;
+        border-radius: 15px;
+        align-items: left;
+    }
+
+    ul nav {
+        list-style: none;
+    }
+
+    h1 a {
+        text-decoration: none;
+        transition: font-size 0.3s ease;
+    }
+
+    header h1 a {
+        padding-left: 25px;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav :hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.20);
+    }
+
+    nav {
+        font-size: 15px;
+        flex: 1;
+        display: flex;
+        height: 100%;
+        width: 75%;
+        margin: 0;
+        margin-right: 20px;
+        justify-content: flex-end;
+        padding-right: 40px;
+    }
+
+    nav a {
+        flex: 1;
+        text-decoration: none;
+        color: white;
+    }
+
+    .homePage {
+        justify-content: center;
+        align-items: center;
+        padding: 180px;
+    }
+
+    .imgHomePage {
+        padding-right: 25px;
+        max-width: 300px;
+        max-height: 750px;
+    }
+
+    .imgFloatRight {
+        max-height: 200px;
+        max-width: 300px;
+        float: right;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .column {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .contenedor-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor-flexElement {
+        margin: 10px;
+        text-align: center;
+        flex: 1 0 calc(50% - 20px);
+    }
+
+    .containerForm {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        max-width: 1200px;
+        margin: 0px;
+    }
+    
+    .containerForm .item {
+        margin-right: 0px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    td {
+        background-color: dimgrey;
+    }
+    
+    th {
+        background-color: black;
+    }
+
+    td:nth-child(6), th:nth-child(6) {
+        display: none;
+    }
+
+    td:nth-child(3), th:nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        display: flex;
+        border: 2px solid white;
+        border-radius: 15px;
+        align-items: left;
+    }
+
+    ul nav {
+        list-style: none;
+    }
+
+    h1 a {
+        text-decoration: none;
+        transition: font-size 0.3s ease;
+    }
+
+    header h1 a {
+        padding-left: 35px;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav :hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.20);
+    }
+
+    nav {
+        font-size: 15px;
+        flex: 1;
+        display: flex;
+        height: 100%;
+        width: 75%;
+        margin: 0;
+        margin-right: 20px;
+        justify-content: flex-end;
+        padding-right: 40px;
+    }
+
+    nav a {
+        flex: 1;
+        text-decoration: none;
+        color: white;
+        margin-right: 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .column {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .contenedor-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor-flexElement {
+        margin: 10px;
+        text-align: center;
+        flex: 1 0 calc(50% - 20px);
+    }
+
+    .containerForm {
+        display: flex;
+        justify-content: left;
+        padding-left: 0px;
+        max-width: 1200px;
+        margin: 20px;
+    }
+    
+    .containerForm .item {
+        margin-right: 10px;
+    }
+}

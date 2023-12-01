@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex; /* Hace que los elementos dentro del header se coloquen en línea (horizontal) */
+    align-items: flex-end; /* Alinea los elementos al borde inferior del contenedor */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    margin-right: 20px; /* Añade espacio entre el logo y los enlaces */
+}
+
+nav {
+    display: flex; /* Hace que los enlaces se coloquen en línea (horizontal) */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al poner el cursor sobre el enlace */
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
